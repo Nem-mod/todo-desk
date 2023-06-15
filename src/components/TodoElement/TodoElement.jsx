@@ -1,18 +1,20 @@
 import './TodoElement.scss';
-import editing from '../../resources/editing.png';
 import {useState} from "react";
 import {EditField} from "../EditField/EditField";
 
-export const TodoElement = ({row, onUpdateRow, onDeleteRow}) => {
+export const TodoElement = ({card, row, onUpdateRow, onDeleteRow, dragInterface}) => {
     const [editingVisibility, setEditingVisibility] = useState('');
     const [textContent, setTextContent] = useState(row.text);
     const [isEditing, setIsEditing] = useState(false);
     const [posData, setPosData] = useState();
 
-
-
     return (
-        <li
+        <li draggable={true}
+            onDragOver={e => dragInterface.handleDragOver(e, card, row)}
+            onDragLeave={e => dragInterface.handleDragLeave(e)}
+            onDragStart={e => dragInterface.handleDragStart(e, card, row)}
+            onDragEnd={e => dragInterface.handleDragEnd(e)}
+            onDrop={e => dragInterface.handleDrop(e, card, row)}
             onMouseEnter={() => setEditingVisibility('visible')}
             onMouseLeave={() => setEditingVisibility('')}
             className="list-element">
@@ -20,12 +22,12 @@ export const TodoElement = ({row, onUpdateRow, onDeleteRow}) => {
             {!isEditing &&
                 <div
                     onClick={(element) => {
-                        const data = element.target.parentElement.parentElement.getBoundingClientRect();
+                        const data = element.target.parentElement.getBoundingClientRect();
+                        console.log(element.target.parentElement);
                         setPosData(data);
                         setIsEditing(true);
                     }}
                     className={"list-element__edit " + editingVisibility}>
-                    <img src={editing} alt=""/>
                 </div>
             }
 

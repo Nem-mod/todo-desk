@@ -38,9 +38,9 @@ export const AddField = ({type, onAdd, handleClose, title, padding}) => {
                 <textarea onInput={handleInput}/>
             </div>
             <div className="add-field__buttons">
-                <div onClick={handleAdd} className="add-field__add-button">
-                    <a>{title}</a>
-                </div>
+                <button type={"submit"} onClick={handleAdd} className="add-field__add-button">
+                    <span>{title}</span>
+                </button>
                 <div className="add-field__close-button">
                     <img onClick={() => handleClose(setIsComponentVisible(false))} src={close} alt="X"/>
                 </div>

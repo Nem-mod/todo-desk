@@ -12,7 +12,7 @@
 .add-field {
   border-radius: 10px;
   background-color: #101204;
-  color: aliceblue;
+  color: #f4f0ff;
 
   animation: slideIn 0.1s ease-out;
   &__input {
@@ -29,7 +29,7 @@
       height: 20px;
       max-height: 200px;
       -webkit-appearance: none;
-      color: #fff;
+      color: rgba(255, 255, 255, 0.76);
     }
 
     textarea, textarea:focus

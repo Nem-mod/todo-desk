@@ -5,6 +5,9 @@ function App() {
   return (
       <div className="wrapper">
           <Desk/>
+          <div className="bg">
+
+          </div>
       </div>
       );
 }

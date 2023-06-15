@@ -1,0 +1,28 @@
+.list-element {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 15px 10px;
+  border-radius: 10px;
+  background-color: #1d2125;
+}
+.list-element__edit {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  background-color: #393e48;
+  border-radius: 2px;
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../resources/editing.png");
+  background-size: cover;
+}
+.list-element__edit:hover {
+  background-color: #bababa;
+}
+.list-element .visible {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=TodoElement.css.map */

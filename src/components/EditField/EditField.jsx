@@ -25,10 +25,9 @@ export const EditField = (props) => {
         props.onUpdateRow(props.id, null);
     }
     return (
-        <form style={
+        <form
+            style={
             {
-                width: props.posData.width,
-                position: 'absolute',
                 top: props.posData.top + 'px',
                 left: props.posData.left + 'px'
             }

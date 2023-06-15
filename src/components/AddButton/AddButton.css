@@ -8,14 +8,16 @@
   border-radius: 10px;
   font-size: 16px;
   text-align: center;
-  .plus {
-    width: 15px;
-    height: 15px;
-  }
-  span {
-    display: inline-block;
-    width: 100%;
-    margin: 0 10px;
-    color: black;
-  }
 }
+.add-content .plus {
+  width: 15px;
+  height: 15px;
+}
+.add-content span {
+  display: inline-block;
+  width: 100%;
+  margin: 0 10px;
+  color: black;
+}
+
+/*# sourceMappingURL=AddButton.css.map */

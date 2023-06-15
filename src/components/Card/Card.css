@@ -1,4 +1,4 @@
-.desk-column {
+.desk-card {
   display: flex;
   flex-direction: column;
   width: 272px;
@@ -8,14 +8,14 @@
   background-color: #101204;
   color: #e7e7e7;
 }
-.desk-column__header {
-  font-size: 18px;
+.desk-card__header {
+  font-size: 26px;
   margin: 10px 0;
 }
-.desk-column .add-content {
+.desk-card .add-content {
   margin-top: 10px;
 }
-.desk-column .add-field {
+.desk-card .add-field {
   margin-top: 10px;
 }
 
