@@ -1,0 +1,31 @@
+.list-element {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 15px 10px;
+  border-radius: 10px;
+  background-color: #1d2125;
+  &__content {
+  }
+  &__edit {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    background-color: #393e48;
+    border-radius: 2px;
+    opacity: 0;
+
+    img{
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  &__edit:hover {
+    background-color: #bababa;
+  }
+  .visible {
+    opacity: 1;
+  }
+}
+

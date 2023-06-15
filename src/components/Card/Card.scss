@@ -1,0 +1,23 @@
+.desk-column {
+  display: flex;
+  flex-direction: column;
+  width: 272px;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #101204;
+  color: #e7e7e7;
+
+  &__header {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .add-content {
+    margin-top: 10px;
+  }
+
+  .add-field{
+    margin-top: 10px;
+  }
+}

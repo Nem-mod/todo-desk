@@ -1,0 +1,22 @@
+.desk-column {
+  display: flex;
+  flex-direction: column;
+  width: 272px;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #101204;
+  color: #e7e7e7;
+}
+.desk-column__header {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.desk-column .add-content {
+  margin-top: 10px;
+}
+.desk-column .add-field {
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=Card.css.map */
